@@ -75,4 +75,12 @@ create c:\data\db
 TERMINAL: MONGOD
 
 
-------------------------------------------------------------------------------------------
+-----------------------------CORS-------------------------------------------------------------
+
+cors - garantia de segurança para atender requisiçao em uma porta(back) e outra porta (front)
+requisicao de portas diferentes
+
+cors.js
+
+
+
