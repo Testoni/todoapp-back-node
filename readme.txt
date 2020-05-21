@@ -80,7 +80,14 @@ TERMINAL: MONGOD
 cors - garantia de segurança para atender requisiçao em uma porta(back) e outra porta (front)
 requisicao de portas diferentes
 
-cors.js
+cors.js,
+
+
+
+PM2
+ npm run production
+./node_modules/.bin/pm2 status
+./node_modules/.bin/pm2 monit
 
 
 

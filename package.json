@@ -5,7 +5,7 @@
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production:": "pm2 start src/loader.js --name todoapp-back-node"
+    "production": "pm2 start src/loader.js --name todoapp-back-node -f"
   },
   "repository": {
     "type": "git",
