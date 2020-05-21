@@ -1,3 +1,7 @@
+TERMINAL: MONGOD
+npm run dev
+...
+
 create app from 0
 
 - create package.json: npm init -y
@@ -30,7 +34,7 @@ change scripts to
 create gitignore
 node_modules
 *.log
-------------------------------------------------------------------------------------------
+--------------------------CONFIGURANDO EXPRESS ----------------------------------------------------------------
 create -> src/config/server.js
 
 const port = 3003
@@ -54,3 +58,21 @@ require('./config/server')
 ------------------------------------------------------------------------------------------
 
 npm run dev OR npm run production
+
+
+--------------------------CONEXAO COM BD ----------------------------------------------------------------
+create database.js in config folder
+const mongoose = require('mongoose') // open mongo conection, create tables
+mongoose.Promise = global.Promise // api promises mongoose use promises node (hide warning)
+module.exports = mongoose.connect('mongodb://localhost/todo')
+
+loader.js
+require('./config/server')
+require('./config/database')
+
+START MONGO
+create c:\data\db
+TERMINAL: MONGOD
+
+
+------------------------------------------------------------------------------------------
